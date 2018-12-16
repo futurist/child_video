@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SimpleHlsExo</string>
+    <string name="play_count">0</string>
 </resources>

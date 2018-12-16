@@ -4,24 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/urlEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:singleLine="true" />
-
-    <Button
-        android:id="@+id/submitButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/urlEditText"
-        android:text="submit" />
-
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/submitButton"
         android:background="#000000">
 
         <com.google.android.exoplayer2.ui.PlayerView
@@ -36,4 +21,30 @@
             android:layout_height="70dp"
             android:layout_gravity="center" />
     </FrameLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/mask"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ff222222"
+            android:clickable="true"
+            android:text="You Need Rest"
+            android:textSize="120dip"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="reset count"
+            android:visibility="gone" />
+
+    </RelativeLayout>
 </RelativeLayout>
